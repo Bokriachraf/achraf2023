@@ -1,0 +1,134 @@
+
+.i-right{
+    
+    position: relative;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+
+.sil{
+
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    position: absolute;
+    right:22%;
+
+    z-index: 1;
+    opacity: 0;
+}
+
+.silhouettes{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    position: absolute;
+    right: 22%;
+    z-index: 1;
+    opacity: 0;
+    
+}
+.fadeR{
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    right: 32%;
+    background-size: 100%;
+    position: absolute;
+   
+    z-index: 1;
+}
+.fadeL{
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    right: 12%;
+    /* width: 30%;
+    height: 100%;
+    max-width: 350px; */
+    /* display: block; */
+    /* background-size: 100%; */
+    position: absolute;
+    
+    z-index: 1;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity:0;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity:1;
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expand{
+    0% {
+        bottom: -2em;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+
+
+
+@media screen and  (max-width: 420px){
+
+    img {
+        width: 110%;
+        height: 110%;
+    }
+   
+    .fadeL{
+        left: 40%;
+    }
+    .silhouettes{
+        left:  30%;
+    }
+    .sil{
+        left: 30%;
+    }
+    .fadeR{
+        left: 20%;
+    }
+}
