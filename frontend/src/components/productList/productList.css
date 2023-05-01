@@ -37,9 +37,9 @@
       width: 100%;
     } */
   
-    .pl-desc {
+    /* .pl-desc {
       display: none;
-    }
+    } */
 
     .pl-list {
       
@@ -47,7 +47,6 @@
     }
     .pl {
       padding: 10px;
-      margin-top: 250px;
     }
   }
 
